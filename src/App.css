@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
   background-color: #282c34;
-  min-height: 100vh;
+}
+
+.App {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-15%, 15%);
+  width: 20%;
+  height: 40%;
+}
+
+.App-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #f3f3f3;
+  background-color: #1a1b21;
+  height: 100vh;
+  border-radius: 160px 60px 0px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+/******************/
+/**    PHOTO    **/
+/******************/
+.App-foto {
+  width: 100%;
+  height: 0 auto;
+  pointer-events: none;
+  padding: 0px;
+  border-radius: 120px 20px 0px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/******************/
+/**    HEADER    **/
+/******************/
+
+.header-titles {
+  color: #f5f5f5;
+  text-align: center;
+  line-height: 0.5;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+.header-titles > h4 {
+  color: #f3bf99;
+}
+
+/******************/
+/**    BUTTONS  **/
+/******************/
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0rem 4rem 1rem 4rem;
+}
+.btn {
+  font-size: 14px;
+  padding: 8px 30px;
+}
+.email-icon {
+  font-size: 14px;
+}
+
+.btn-social {
+  display: inline-flex;
+  align-items: center;
+  color: #282c34;
+  text-decoration: none;
+}
+
+.btn-email {
+  background-color: #d1d5db;
+  margin-right: 1rem;
+  border-radius: 6px;
+}
+
+.btn-linkedin {
+  background-color: #5093e2;
+  border-radius: 6px;
+}
+.btn-linkedin > a {
+  color: #f3f3f3;
+}
+/******************/
+/**    MAIN  **/
+/******************/
+
+.main {
+  text-align: left;
+  padding: 0rem 3rem 0rem 3rem;
+}
+.main-about {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.main-title {
+  font-size: 16px;
+  color: #f5f5f5;
+}
+.main-text {
+  font-size: 14px;
+  color: #dcdcdc;
+  letter-spacing: 0.6px;
+  margin-bottom: 2rem;
+}
+
+.main-interests:last-child {
+  margin-bottom: 1rem;
+}
+/******************/
+/**    FOOTER   **/
+/******************/
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  background-color: #101114;
+}
+
+.icon {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+
+.btn-icons {
+  font-size: 30px;
+  text-decoration: none;
+  color: #d1d5db;
+}
+
+@media only screen and (max-width: 400px) {
+  .btn-icons {
+    font-size: 20px;
   }
 }
